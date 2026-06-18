@@ -3,7 +3,7 @@ from features.indicators import add_indicators
 from labeling.atr_label import create_labels
 from models.xgb_model import train_xgb
 
-df = load_data('data/raw/EURUSD_H1_1000.csv')
+df = load_data('data/EURUSD_H1_1000.csv')
 
 df = add_indicators(df)
 df = create_labels(df)
