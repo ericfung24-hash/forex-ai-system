@@ -1,6 +1,9 @@
 import joblib
 
-MODEL_PATH = "models/xgb_model.pkl"
-
-def load_model():
-    return joblib.load(MODEL_PATH)
+def load_models():
+    return {
+        "EURUSD": joblib.load("models/eurusd.pkl"),
+        "GBPUSD": joblib.load("models/gbpusd.pkl"),
+        "USDJPY": joblib.load("models/usdjpy.pkl"),
+        "AUDUSD": joblib.load("models/audusd.pkl"),
+    }
