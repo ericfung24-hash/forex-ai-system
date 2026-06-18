@@ -39,4 +39,3 @@ def currency_strength(df):
     weakest = strength.iloc[-1].idxmin()
 
     return strength, strongest, weakest
-``
